@@ -17,7 +17,7 @@ def model_prediction(test_image):
 st.sidebar.markdown(
         """
         <div style="text-align: ;">
-            <h1 style="color: #ff6347;">Quevos</h1>
+            <h1 style="color: #ff6347;">kuevos AI</h1>
         </div>
         """,
         unsafe_allow_html=True
