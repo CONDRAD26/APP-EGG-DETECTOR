@@ -71,7 +71,6 @@ elif(app_mode == "Egg Recognition"):
         #Predict Button
     if(st.button("Predict")):
         with st.spinner("Please Wait....."):
-            st.snow()
             st.write("Our prediction")
             result_index = model_prediction(test_image)
         #Define Classname
