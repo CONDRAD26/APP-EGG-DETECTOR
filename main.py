@@ -32,25 +32,23 @@ if(app_mode == "Home"):
     image_path ="image.jpeg"
     st.image(image_path, width=450) 
     st.markdown("""
-## Welcome to Our Egg Class Detection App.
+## Welcome to Kuevos-AI
+### Revolutionizing Egg Grading with AI
+Kuevos is a cutting-edge AI-powered solution designed to accurately classify eggs based on USDA standards. By leveraging advanced image analysis techniques, Kuevos-AIß ensures precise categorization of eggs into AA, A, B, and Stale grades, streamlining your egg sorting process and enhancing product quality.
+### How it Works
+1.	***Image Capture:*** High-resolution images of eggs are captured under controlled lighting conditions.
+2.	***AI Analysis:*** Our sophisticated AI model analyzes key features such as shell condition, albumen clarity, and yolk appearance.
+3.	***Accurate Classification:*** Eggs are classified into AA, A, B, or Stale categories based on rigorous standards.
+4.	***Real-Time Results:*** Instantaneous classification results enable efficient sorting and packaging.
+### Benefits of Kuevos
+•  ***Enhanced Efficiency:*** Streamlines the egg grading process, reducing labor costs and time.
 
-### About Us
+•  ***Improved Accuracy:*** Minimizes human error and ensures consistent classification.
 
-Welcome to the Egg Class Detection App! Our goal is to provide a simple and efficient tool for classifying different types of eggs for customer to get the class of Eggs the want . This application is only for internal use only no any other individuals or organizations should use without permission.
+•	***Product Quality:*** Guarantees the delivery of high-quality eggs to customers.
 
-### Our Mission
-
-Our mission is to empower the egg industry with advanced technology, enhancing productivity and accuracy.
-
-### How It Works
-
-1. **Upload an image of the egg.**
-2. **Our app processes the image using a powerful machine learning model.**
-3. **Instantly receive the classification result.**
-
-### Get Started
-
-Simply upload an egg image (JPG, JPEG, PNG) and let our app handle the rest. Thank you for choosing our Egg Class Detection App!
+•	***Data-Driven Insights:*** Provides valuable data for optimizing egg production and distribution.
+### Experience the Kuevos Difference
 """)
     
     
@@ -74,7 +72,7 @@ elif(app_mode == "Egg Recognition"):
             st.write("Our prediction")
             result_index = model_prediction(test_image)
         #Define Classname
-            class_name = ['Egg_Class B', 'Egg_Fresh Class AA', 'Egg_Fresh Class B', 'Egg_stale']
+            class_name = ['Egg_Class B', 'Egg_Fresh Class A', 'Egg_Fresh Class AA', 'Egg_stale']
             st.success("model is Predicting it's a {}".format(class_name[result_index]))
         
 #Egg Recognition2
@@ -90,5 +88,5 @@ elif(app_mode == "Egg Recognition(take a photo)"):
             st.write("Our prediction")
             result_index = model_prediction(test_image)
         #Define Classname
-            class_name = ['Egg_Class B', 'Egg_Fresh Class AA', 'Egg_Fresh Class B', 'Egg_stale']
+            class_name = ['Egg_Class B', 'Egg_Fresh Class A', 'Egg_Fresh Class AA', 'Egg_stale']
             st.success("model is Predicting it's a {}".format(class_name[result_index]))
